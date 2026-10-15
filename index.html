@@ -13,7 +13,7 @@
 <body>
 
   <header class="nav">
-    <a class="nav__logo" href="#top">RC<span>_</span></a>
+    <a class="nav__logo" href="#">RC<span>_</span></a>
     <nav class="nav__links">
       <a href="#projects" data-i18n="nav.projects">Projects</a>
       <a href="#skills" data-i18n="nav.skills">Skills</a>
@@ -24,6 +24,12 @@
   </header>
 
   <main id="top">
+
+  <!-- ===== DETAIL VIEW: filled by script.js when the URL is #project/some-id ===== -->
+  <section id="detail-view" class="detail" hidden></section>
+
+  <!-- ===== HOME VIEW: everything below is hidden while a project is open ===== -->
+  <div id="home-view">
 
     <!-- HERO -->
     <section class="hero">
@@ -97,6 +103,7 @@
       <p class="contact__mail">raphc.official.business@gmail.com</p>
     </section>
 
+  </div><!-- /home-view -->
   </main>
 
   <footer class="footer">
