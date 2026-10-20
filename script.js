@@ -10,12 +10,13 @@ if (copyBtn) {
         // Wait for the navigator to write the email into the clipboard
         await navigator.clipboard.writeText("raphc.official.business@gmail.com");
     
+        const isFrench = document.body.classList.contains("fr");
         // Place the string "Copied!" into the content of the button
-        copyBtn.textContent = "Copied!";
+        copyBtn.textContent = isFrench ? "Copié !" : "Copied!";
     
         // Wait for 2000ms and then reset the button's text back to "Copy"
         setTimeout(() => {
-            copyBtn.textContent = "Copy";
+            copyBtn.textContent = isFrench ? "Copier" : "Copy";
         }, 2000);
     });
 }
@@ -33,6 +34,11 @@ function setLang(lang) {
 
     // Changes the text content of the button to the right language
     langBtn.textContent = lang === "fr" ? "EN" : "FR";
+
+    // Adds the right language to the copy button
+    if (copyBtn) {
+        copyBtn.textContent = lang === "fr" ? "Copier" : "Copy";
+    }
 
     try {
         // Saves the language choice in the browser
