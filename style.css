@@ -58,3 +58,21 @@ body {
     justify-content: center;
     color: #666;
 }
+
+.main-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #ddd;
+}
+
+.info {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.info th,
+.info td {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    text-align: left;
+}
