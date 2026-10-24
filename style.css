@@ -43,3 +43,18 @@ body {
     color: gray;
     font-size: 0.9em;
 }
+
+.card video,
+.card .no-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #ddd;
+}
+
+.no-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
