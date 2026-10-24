@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JankyFantasy | Raphaël Couturier</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html">
+                <span class="en">← Back</span><span class="fr">← Retour</span>
+            </a>
+            <button id="lang-btn">FR</button>
+        </header>
+
+        <main>
+            <h1>JankyFantasy</h1>
+            <p class="tag">
+                <span class="en">Completed: June 2026</span>
+                <span class="fr">Terminé : juin 2026</span>
+            </p>
+
+            <video class="main-video" src="../videos/jankyfantasy.mp4" autoplay muted loop playsinline></video>
+
+            <p class="en">JankyFantasy is a local co-op brawler where 1 to 4 players team up against a boss. Each player picks a class (Paladin, Mage or Archer), combines elemental attacks to trigger combos, and revives downed teammates to survive.</p>
+            <p class="fr">JankyFantasy est un jeu de combat coopératif local où 1 à 4 joueurs affrontent un boss ensemble. Chaque joueur choisit une classe (Paladin, Mage ou Archer), combine des attaques élémentaires pour déclencher des combos et réanime ses coéquipiers à terre pour survivre.</p>
+
+            <table class="info">
+                <tr>
+                    <th>Dates</th>
+                    <td><span class="en">May – June 2026</span><span class="fr">mai – juin 2026</span></td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td><span class="en">Final class project, team of 3</span><span class="fr">Projet final de cours, équipe de 3</span></td>
+                </tr>
+                <tr>
+                    <th>Tech</th>
+                    <td>Unity · C#</td>
+                </tr>
+                <tr>
+                    <th><span class="en">Tools</span><span class="fr">Outils</span></th>
+                    <td>Unity · Discord</td>
+                </tr>
+            </table>
+
+            <h2 class="en">My role</h2>
+            <h2 class="fr">Mon rôle</h2>
+            <ul class="en">
+                <li>Built the combat base class (<code>Combattant</code>) with tank controls, and the player character subclass</li>
+                <li>Coded the 3 playable classes, each with passive and held perks</li>
+                <li>Made the revive system for downed players</li>
+                <li>Designed the elemental combo system, inspired by Genshin Impact</li>
+                <li>Set up local multiplayer for up to 4 players across 2 keyboard layouts and gamepads</li>
+            </ul>
+            <ul class="fr">
+                <li>Conception de la classe de base de combat (<code>Combattant</code>) avec des contrôles « tank », et de la sous-classe du personnage joueur</li>
+                <li>Programmation des 3 classes jouables, chacune avec des bonus passifs et maintenus</li>
+                <li>Système de réanimation des joueurs à terre</li>
+                <li>Conception du système de combos élémentaires, inspiré de Genshin Impact</li>
+                <li>Mise en place du multijoueur local jusqu'à 4 joueurs sur 2 dispositions de clavier et des manettes</li>
+            </ul>
+
+            <h2 class="en">Team</h2>
+            <h2 class="fr">Équipe</h2>
+            <p class="en">Mathis Teixeira made the boss's behavior tree and attacks. Vincent Lévesque handled the UI, VFX and sound effects, and helped Mathis and me.</p>
+            <p class="fr">Mathis Teixeira a créé l'arbre de comportement et les attaques du boss. Vincent Lévesque s'est occupé de l'interface, des effets visuels et sonores, et nous a aidés, Mathis et moi.</p>
+
+            <h2 class="en">Screenshots</h2>
+            <h2 class="fr">Captures d'écran</h2>
+            <figure>
+                <img src="../images/jankyfantasy/combo.png" alt="Elemental combo in JankyFantasy">
+                <figcaption>
+                    <span class="en">An elemental combo</span><span class="fr">Un combo élémentaire</span>
+                </figcaption>
+            </figure>
+
+            <h2 class="en">What I learned</h2>
+            <h2 class="fr">Ce que j'ai appris</h2>
+            <ul class="en">
+                <li>Unity's PlayerInputManager couldn't auto-join two players on one keyboard, so I paired each player with a control scheme and device manually.</li>
+            </ul>
+            <ul class="fr">
+                <li>Le PlayerInputManager de Unity ne pouvait pas faire joindre deux joueurs sur un même clavier, donc j'ai associé manuellement chaque joueur à un schéma de contrôle et à un appareil.</li>
+            </ul>
+
+            <h2>Links</h2>
+            <p>
+                <a href="https://github.com/Shadow-RaphaelC/REPO-NAME" target="_blank">GitHub</a>
+            </p>
+        </main>
+
+        <script src="../script.js"></script>
+    </body>
+</html>
