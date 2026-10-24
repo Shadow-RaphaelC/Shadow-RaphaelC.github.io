@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rental-Fleet | Raphaël Couturier</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="page-nav">
+            <a href="../index.html">
+                <span class="en">← Back</span><span class="fr">← Retour</span>
+            </a>
+            <button id="lang-btn">FR</button>
+        </header>
+
+        <main>
+            <h1>Rental-Fleet</h1>
+            <p class="tag">
+                <span class="en">In progress</span>
+                <span class="fr">En cours</span>
+            </p>
+
+            <video class="main-video" src="../videos/rental-fleet.mp4" controls muted playsinline></video>
+
+            <p class="en">Rental-Fleet is a vehicle rental system made of three separate apps: a REST API that manages the fleet, an admin dashboard that talks to the API from the browser, and a public rental website in PHP that uses the same API from the server.</p>
+            <p class="fr">Rental-Fleet est un système de location de véhicules composé de trois applications distinctes : une API REST qui gère la flotte, un tableau de bord d'administration qui communique avec l'API depuis le navigateur, et un site de location public en PHP qui utilise la même API côté serveur.</p>
+
+            <table class="info">
+                <tr>
+                    <th>Dates</th>
+                    <td><span class="en">Sept – Dec 2026</span><span class="fr">sept. – déc. 2026</span></td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td><span class="en">School project, solo</span><span class="fr">Projet scolaire, en solo</span></td>
+                </tr>
+                <tr>
+                    <th>Tech</th>
+                    <td>Node.js · JavaScript (Fetch) · PHP (cURL) · REST</td>
+                </tr>
+            </table>
+
+            <h2 class="en">How it fits together</h2>
+            <h2 class="fr">Comment ça fonctionne</h2>
+            <ul class="en">
+                <li><strong>api.rental-fleet.com</strong>: the Node.js REST API, the only part that touches the data</li>
+                <li><strong>admin.rental-fleet.com</strong>: admin dashboard in JavaScript, calls the API with Fetch</li>
+                <li><strong>budget-location.ca</strong>: public rental site in PHP, calls the API with cURL</li>
+            </ul>
+            <ul class="fr">
+                <li><strong>api.rental-fleet.com</strong> : l'API REST en Node.js, la seule partie qui accède aux données</li>
+                <li><strong>admin.rental-fleet.com</strong> : tableau de bord d'administration en JavaScript, appelle l'API avec Fetch</li>
+                <li><strong>budget-location.ca</strong> : site de location public en PHP, appelle l'API avec cURL</li>
+            </ul>
+
+            <h2 class="en">What I built</h2>
+            <h2 class="fr">Ce que j'ai réalisé</h2>
+            <ul class="en">
+                <li>All three apps, solo</li>
+                <li>[e.g. the API's endpoints for vehicles and rentals]</li>
+                <li>[e.g. handling CORS so the admin dashboard can call the API]</li>
+            </ul>
+            <ul class="fr">
+                <li>Les trois applications, en solo</li>
+                <li>[ex. les routes de l'API pour les véhicules et les locations]</li>
+                <li>[ex. la gestion du CORS pour que le tableau de bord puisse appeler l'API]</li>
+            </ul>
+
+            <h2 class="en">Screenshots</h2>
+            <h2 class="fr">Captures d'écran</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="../images/rental-fleet/admin.png" alt="Rental-Fleet admin dashboard">
+                    <figcaption>
+                        <span class="en">Admin dashboard</span><span class="fr">Tableau de bord d'administration</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/rental-fleet/site.png" alt="Budget Location rental site">
+                    <figcaption>
+                        <span class="en">Public rental site</span><span class="fr">Site de location public</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <h2>Links</h2>
+            <p>
+                <a href="https://github.com/Shadow-RaphaelC/REPO-NAME" target="_blank">GitHub</a>
+            </p>
+        </main>
+
+        <script src="../script.js"></script>
+    </body>
+</html>

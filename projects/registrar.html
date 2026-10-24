@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar | Raphaël Couturier</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="page-nav">
+            <a href="../index.html">
+                <span class="en">← Back</span><span class="fr">← Retour</span>
+            </a>
+            <button id="lang-btn">FR</button>
+        </header>
+
+        <main>
+            <h1>Registrar</h1>
+            <p class="tag">
+                <span class="en">Completed: Winter 2026</span>
+                <span class="fr">Terminé : hiver 2026</span>
+            </p>
+
+            <video class="main-video" src="../videos/registrar.mp4" controls muted playsinline></video>
+
+            <p class="en">Registrar is a web app for a college registrar's office. Staff manage students, courses and teachers, enroll students in the courses offered next session, and assign teachers to courses. Parts of the page refresh on their own without reloading. It was my solo final project, deployed on Azure.</p>
+            <p class="fr">Registrar est une application web pour le registrariat d'un collège. Le personnel gère les étudiants, les cours et les enseignants, inscrit les étudiants aux cours offerts à la prochaine session et attribue les cours aux enseignants. Certaines parties de la page se mettent à jour seules, sans recharger. C'était mon projet final en solo, déployé sur Azure.</p>
+
+            <table class="info">
+                <tr>
+                    <th>Dates</th>
+                    <td><span class="en">Winter 2026</span><span class="fr">hiver 2026</span></td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td><span class="en">Final project, solo</span><span class="fr">Projet final, en solo</span></td>
+                </tr>
+                <tr>
+                    <th>Tech</th>
+                    <td>ASP.NET MVC 5 · C# · jQuery/AJAX · JSON · Azure</td>
+                </tr>
+            </table>
+
+            <h2 class="en">What I built</h2>
+            <h2 class="fr">Ce que j'ai réalisé</h2>
+            <ul class="en">
+                <li>The teacher module: full CRUD with profile photos and seniority</li>
+                <li>Session-aware enrollment: students can only be enrolled in courses offered next session (fall or winter)</li>
+                <li>Course assignment for teachers, preventing a course from going to two teachers in the same year</li>
+                <li>Students grouped by year in the course form</li>
+                <li>A current session switcher for registrar staff</li>
+                <li>Deployed the app to Azure</li>
+            </ul>
+            <ul class="fr">
+                <li>Le module des enseignants : CRUD complet avec photo de profil et ancienneté</li>
+                <li>Les inscriptions selon la session : un étudiant ne peut être inscrit qu'aux cours offerts à la prochaine session (automne ou hiver)</li>
+                <li>L'attribution des cours aux enseignants, en empêchant qu'un cours soit donné à deux enseignants la même année</li>
+                <li>Les étudiants regroupés par année dans le formulaire des cours</li>
+                <li>Un sélecteur de session courante pour le personnel du registrariat</li>
+                <li>Le déploiement de l'application sur Azure</li>
+            </ul>
+
+            <p class="en">Built on my teacher Nicolas Chourot's template, which provided the accounts and login system, validation, partial page refresh and the JSON data layer.</p>
+            <p class="fr">Réalisé à partir du gabarit de mon enseignant Nicolas Chourot, qui fournissait le système de comptes et de connexion, la validation, le rafraîchissement partiel des pages et la couche de données JSON.</p>
+
+            <h2 class="en">Screenshots</h2>
+            <h2 class="fr">Captures d'écran</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="../img/registrar/students.png" alt="Registrar student list">
+                    <figcaption>
+                        <span class="en">Student list</span><span class="fr">Liste des étudiants</span>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/registrar/edit.png" alt="Registrar edit form">
+                    <figcaption>
+                        <span class="en">Editing a course</span><span class="fr">Modification d'un cours</span>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/registrar/teacher.png" alt="Registrar teacher/classes list">
+                    <figcaption>
+                        <span class="en">Teacher/Classes list</span><span class="fr">Liste des profs et cours</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <h2 class="en">One Thing I learned</h2>
+            <h2 class="fr">Une chose que j'ai appris</h2>
+            <ul class="en">
+                <li>Deploying to the cloud: I hit Azure's free tier quota and had to move the app to a pay-as-you-go plan to keep it online.</li>
+            </ul>
+            <ul class="fr">
+                <li>Le déploiement infonuagique : j'ai atteint le quota de l'offre gratuite d'Azure et j'ai dû passer à un forfait à l'utilisation pour garder l'application en ligne.</li>
+            </ul>
+
+            <h2>Links</h2>
+            <p>
+                <a href="https://github.com/Shadow-RaphaelC/Registrar" target="_blank">GitHub</a> ·
+            </p>
+        </main>
+
+        <script src="../script.js"></script>
+    </body>
+</html>
