@@ -110,6 +110,10 @@ blockquote {
     border: 1px solid #ccc;
 }
 
+.gallery.phone figure {
+    width: calc(33.33% - 14px);
+}
+
 @media (max-width: 600px) {
     .gallery figure {
         width: 100%;
