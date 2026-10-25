@@ -34,13 +34,6 @@ body {
     border-color: #333;
 }
 
-.card video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    background: #ddd;
-}
-
 .card h3 {
     margin: 10px 0 5px;
 }
@@ -65,7 +58,7 @@ body {
     color: #666;
 }
 
-.main-video {
+.main-video, main > .no-video {
     width: 100%;
     aspect-ratio: 16 / 9;
     background: #ddd;
